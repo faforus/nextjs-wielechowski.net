@@ -45,11 +45,11 @@ const Home = () => {
             src={
               windowWidth > 800
                 ? webpSupported
-                  ? "webpimages/top.webp"
-                  : "images/top.jpg"
+                  ? "/webpimages/top.webp"
+                  : "/images/top.jpg"
                 : webpSupported
-                ? "webpimages/topSmall.webp"
-                : "images/topSmall.jpg"
+                ? "/webpimages/topSmall.webp"
+                : "/images/topSmall.jpg"
             }
           />
           <div className={classes.stripe}>
@@ -63,11 +63,11 @@ const Home = () => {
             src={
               windowWidth > 800
                 ? webpSupported
-                  ? "webpimages/bottom.webp"
-                  : "images/bottom.jpg"
+                  ? "/webpimages/bottom.webp"
+                  : "/images/bottom.jpg"
                 : webpSupported
-                ? "webpimages/bottomSmall.webp"
-                : "images/bottomSmall.jpg"
+                ? "/webpimages/bottomSmall.webp"
+                : "/images/bottomSmall.jpg"
             }
           />
         </div>

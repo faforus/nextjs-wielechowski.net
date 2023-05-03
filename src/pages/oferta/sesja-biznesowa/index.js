@@ -59,7 +59,7 @@ const Business = () => {
       return { id: index + 1, src: thumbnailImages[index], largeImage: img };
     });
     setMappedObjectsImages(mappedObjectImages);
-  }, [images]);
+  }, [images, thumbnailImages]);
 
   return (
     <Fragment>

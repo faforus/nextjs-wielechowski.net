@@ -16,6 +16,8 @@ const ArrowButton = React.memo(({ direction, onClick }) => {
   );
 });
 
+ArrowButton.displayName = "Arrow Button";
+
 const CloseButton = React.memo(({ onClick }) => {
   return (
     <span onClick={onClick} className={`${classes["close-button"]}`}>
@@ -23,6 +25,8 @@ const CloseButton = React.memo(({ onClick }) => {
     </span>
   );
 });
+
+CloseButton.displayName = "Close Button";
 
 const Modal = (props) => {
   const debounce = (func, wait) => {
@@ -64,7 +68,7 @@ const Modal = (props) => {
       document.body.style.overflow = "auto";
       document.removeEventListener("keydown", handleKeyDown);
     };
-  }, [props.modal, props.handlePrevClick, props.handleNextClick]);
+  });
 
   const imgRef = useRef(null);
 
