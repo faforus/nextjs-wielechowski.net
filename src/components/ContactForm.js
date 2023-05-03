@@ -20,45 +20,45 @@ const ContactForm = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    // validateForm();
+    validateForm();
 
-    // if (formIsValid) {
-    //   setSendingForm(true);
-    //   const url = "https://sendemail-2qkjfrtbsq-uw.a.run.app";
-    //   const data = {
-    //     name,
-    //     surname,
-    //     phoneNumber,
-    //     email,
-    //     message,
-    //   };
+    if (formIsValid) {
+      setSendingForm(true);
+      const url = "https://sendemail-2qkjfrtbsq-uw.a.run.app";
+      const data = {
+        name,
+        surname,
+        phoneNumber,
+        email,
+        message,
+      };
 
-    //   try {
-    //     const response = await fetch(url, {
-    //       method: "POST",
-    //       headers: {
-    //         "Content-Type": "application/json",
-    //       },
-    //       body: JSON.stringify(data),
-    //     });
+      try {
+        const response = await fetch(url, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+        });
 
-    //     if (response.ok) {
-    //       setName("");
-    //       setSurname("");
-    //       setPhoneNumber("");
-    //       setEmail("");
-    //       setMessage("");
-    //       setSendingForm(false);
-    //       setSendingFormOutcome("sent");
-    //     } else {
-    //       throw new Error("Error sending the form.");
-    //     }
-    //   } catch (error) {
-    //     console.error("Error:", error);
-    //     setSendingForm(false);
-    //     setSendingFormOutcome("notsent");
-    //   }
-    // }
+        if (response.ok) {
+          setName("");
+          setSurname("");
+          setPhoneNumber("");
+          setEmail("");
+          setMessage("");
+          setSendingForm(false);
+          setSendingFormOutcome("sent");
+        } else {
+          throw new Error("Error sending the form.");
+        }
+      } catch (error) {
+        console.error("Error:", error);
+        setSendingForm(false);
+        setSendingFormOutcome("notsent");
+      }
+    }
   };
 
   const validateForm = () => {

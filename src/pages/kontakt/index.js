@@ -2,8 +2,6 @@ import Layout from "@/layout/Layout";
 import Head from "next/head";
 import classes from "./index.module.css";
 import ContactForm from "@/components/ContactForm";
-// import { motion } from "framer-motion";
-// import { CUSTOM_MOTION_PROPS } from "../config/config";
 import { Fragment } from "react";
 import MotionContainer from "@/components/MotionContainer";
 
