@@ -43,8 +43,14 @@ export default function App({ Component, pageProps }) {
           name="keywords"
           content="fotograf, fotografia, sesja biznesowa, sesja wizerunkowa, fotografia ślubna, reportaż, reportaż ślubny, wieczory panieńskie, chrzciny, fotografia komercyjna, b2b, gdynia, sopot, gdańsk, trójmiasto, pomorze, retouch, obróbka zdjęć"
         />
-        <meta property="og:image" content="/images/fbogimage" />
-        <meta property="og:image:secure_url" content="/images/fbogimage.jpg" />
+        <meta
+          property="og:image"
+          content="https://nextjs-wielechowski-net.vercel.app/images/fbogimage.jpg"
+        />
+        <meta
+          property="og:image:secure_url"
+          content="https://nextjs-wielechowski-net.vercel.app/images/fbogimage.jpg"
+        />
         <meta property="og:title" content="Filip Wielechowski Fotografia" />
         <meta property="og:url" content="https://wielechowski.net/" />
         <meta property="og:type" content="website" />
