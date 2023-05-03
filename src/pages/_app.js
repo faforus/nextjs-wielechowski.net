@@ -53,7 +53,7 @@ export default function App({ Component, pageProps }) {
         <link rel="apple-touch-icon" href="/images/icon.png" />
       </Head>
       {!loadedWelcome && <WelcomeModal />}
-      <AnimatePresence mode="wait" initial={false}>
+      <AnimatePresence mode="wait">
         <Component {...pageProps} key={router.pathname} />
       </AnimatePresence>
     </Fragment>

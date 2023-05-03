@@ -172,7 +172,7 @@ const ContactForm = () => {
     );
   }
   if (sendingForm) {
-    content = <Spinner />;
+    content = <Spinner maxHeight="100px" />;
   }
   if (sendingFormOutcome === "sent") {
     content = (
