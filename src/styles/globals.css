@@ -44,6 +44,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .container {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -62,6 +63,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .motion-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
