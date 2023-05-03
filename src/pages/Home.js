@@ -48,8 +48,8 @@ const Home = () => {
                   ? "/webpimages/top.webp"
                   : "/images/top.jpg"
                 : webpSupported
-                ? "/webpimages/topSmall.webp"
-                : "/images/topSmall.jpg"
+                ? "/webpimages/topsmall.webp"
+                : "/images/topsmall.jpg"
             }
           />
           <div className={classes.stripe}>
@@ -66,8 +66,8 @@ const Home = () => {
                   ? "/webpimages/bottom.webp"
                   : "/images/bottom.jpg"
                 : webpSupported
-                ? "/webpimages/bottomSmall.webp"
-                : "/images/bottomSmall.jpg"
+                ? "/webpimages/bottomsmall.webp"
+                : "/images/bottomsmall.jpg"
             }
           />
         </div>
